@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+	<configuration>
+		<!-- report theme -->
+		<!-- standard, dark -->
+		<theme>Dark</theme>
+
+		<!-- document encoding -->
+		<!-- defaults to UTF-8 -->
+		<encoding>UTF-8</encoding>
+
+		<!-- protocol for script and stylesheets -->
+		<!-- defaults to https -->
+		<protocol>https</protocol>
+
+		<!-- title of the document -->
+		<documentTitle> Title </documentTitle>
+
+		<!-- report name - displayed at top-nav -->
+		<!-- <reportName>CSAFE QA Automation Report</reportName> -->
+
+
+		<!-- report name - displayed at top-nav -->
+
+		<!-- report headline - displayed at top-nav, after reportHeadline -->
+		<reportName>AUTOMATION-REPORT
+        <![CDATA[
+                <img src=''/>
+                   ]]></reportName>
+
+		<!-- location of charts in the test view -->
+		<!-- top, bottom -->
+		<testViewChartLocation>top</testViewChartLocation>
+
+		<!-- custom javascript -->
+		<scripts>
+            <![CDATA[
+                $(document).ready
+                (function() 
+                 {
+                    $('.brand-logo.blue.darken-3').css('display','none');
+                 }
+                );
+            ]]>
+             <![CDATA[
+                $(document).ready
+                (function()
+                 {
+                    $('.brand-logo.black').css('display','none');
+                 }
+                );
+            ]]>
+            
+            <![CDATA[
+                $(document).ready
+                (function() 
+                 {
+                    $('ul li:nth-child(2) a span').css('display','none');
+                 }
+                 );
+            ]]>
+
+		</scripts>
+
+		<!-- custom styles -->
+
+
+		<styles>
+            <![CDATA[ 
+            .report-name > img { float: left;height: 99%;argin-center: 10px;margin-top: 0px;width: auto;}
+            .report-name { text-align: center;padding-left: 350px;font-size: 20px;} 
+            .blue.darken-3 {background-color: #f5f5f5 !important;}
+             nav ul:last-child a{color: #039be5;}
+            ]]>
+		</styles>
+
+	</configuration>
+</extentreports>
